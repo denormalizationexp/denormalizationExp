@@ -1,0 +1,14 @@
+# Local IDE and operating-system metadata must not enter blind-review archives.
+.idea/
+.vscode/
+.DS_Store
+._*
+__MACOSX/
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+.pgpass

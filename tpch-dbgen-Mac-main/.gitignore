@@ -1,0 +1,33 @@
+# build artifacts
+*.o
+dbgen/dbgen
+dbgen/qgen
+dbgen_for_refresh/dbgen
+dbgen_for_refresh/qgen
+dbgen_new/dbgen
+dbgen_new/qgen
+*.dSYM/
+
+# macOS
+.DS_Store
+
+# editor
+.vscode/
+.cursor/
+
+# logs / temp
+*.log
+
+# generated TPC-H data and update files
+*.tbl
+*.tbl.*
+delete.*
+tbl_sf_*/
+tbl_sf_*_refresh/
+ref_data/
+dbgen_new/
+dbgen_for_refresh/tbl_sf_*/
+dbgen_for_refresh/tbl_sf_*_refresh/
+
+# local IDE files
+.idea/

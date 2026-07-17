@@ -1,0 +1,11 @@
+-- Replace /path/to/denormalizationExp with the local project root before running.
+\copy region   FROM '/path/to/denormalizationExp/tpch-dbgen-Mac-main/dbgen_new/tbl_sf_05/region.tbl'   WITH (FORMAT csv, DELIMITER '|', NULL '');
+\copy nation   FROM '/path/to/denormalizationExp/tpch-dbgen-Mac-main/dbgen_new/tbl_sf_05/nation.tbl'   WITH (FORMAT csv, DELIMITER '|', NULL '');
+\copy supplier FROM '/path/to/denormalizationExp/tpch-dbgen-Mac-main/dbgen_new/tbl_sf_05/supplier.tbl' WITH (FORMAT csv, DELIMITER '|', NULL '');
+\copy part     FROM '/path/to/denormalizationExp/tpch-dbgen-Mac-main/dbgen_new/tbl_sf_05/part.tbl'     WITH (FORMAT csv, DELIMITER '|', NULL '');
+\copy partsupp FROM '/path/to/denormalizationExp/tpch-dbgen-Mac-main/dbgen_new/tbl_sf_05/partsupp.tbl' WITH (FORMAT csv, DELIMITER '|', NULL '');
+\copy customer FROM '/path/to/denormalizationExp/tpch-dbgen-Mac-main/dbgen_new/tbl_sf_05/customer.tbl' WITH (FORMAT csv, DELIMITER '|', NULL '');
+\copy orders   FROM '/path/to/denormalizationExp/tpch-dbgen-Mac-main/dbgen_new/tbl_sf_05/orders.tbl'   WITH (FORMAT csv, DELIMITER '|', NULL '');
+\copy lineitem FROM '/path/to/denormalizationExp/tpch-dbgen-Mac-main/dbgen_new/tbl_sf_05/lineitem.tbl' WITH (FORMAT csv, DELIMITER '|', NULL '');
+
+

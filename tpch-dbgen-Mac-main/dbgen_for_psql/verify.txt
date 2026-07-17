@@ -1,0 +1,16 @@
+SELECT COUNT(*) FROM region;     -- 5
+SELECT COUNT(*) FROM nation;     -- 25
+SELECT COUNT(*) FROM supplier;   -- 10000
+SELECT COUNT(*) FROM part;       -- 200000
+SELECT COUNT(*) FROM customer;   -- 150000
+SELECT COUNT(*) FROM orders;     -- 1500000
+SELECT COUNT(*) FROM lineitem;   -- 6000000
+
+
+SELECT COUNT(*) = COUNT(DISTINCT r_regionkey) FROM region;
+SELECT COUNT(*) = COUNT(DISTINCT n_nationkey) FROM nation;
+SELECT COUNT(*) = COUNT(DISTINCT p_partkey)   FROM part;
+SELECT COUNT(*) = COUNT(DISTINCT s_suppkey)   FROM supplier;
+SELECT COUNT(*) = COUNT(DISTINCT c_custkey)   FROM customer;
+SELECT COUNT(*) = COUNT(DISTINCT o_orderkey)  FROM orders;
+SELECT COUNT(*) = COUNT(DISTINCT (l_orderkey, l_linenumber)) FROM lineitem;
