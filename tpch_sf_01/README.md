@@ -200,3 +200,9 @@ The refresh results are written automatically to:
 
 The JSON file is generated when the experiment is executed and contains the
 measured materialized-view refresh costs.
+
+## Analysis Notebook
+
+[`analysis/trade_off_template_time_uniform.ipynb`](analysis/trade_off_template_time_uniform.ipynb)
+provides the detailed outputs and visualizations for the experimental plots
+presented in the paper.
