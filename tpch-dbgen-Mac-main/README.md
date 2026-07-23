@@ -29,7 +29,7 @@ make -f makefile.suite \
 
 Generate data with:
 ```bash
-./dbgen -s 05
+./dbgen -s 0.5
 ```
 
 This generates the `.tbl` data files. In practice, these `.tbl` files are usually created inside the dbgen directory.
